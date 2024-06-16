@@ -13,7 +13,7 @@ app.use("/customer", session({
     resave: true, 
     saveUninitialized: true,
     cookie: { 
-        secure: false, 
+        secure: true, 
         maxAge: 18000000 
     }  
 }))

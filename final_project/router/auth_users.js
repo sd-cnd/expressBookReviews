@@ -6,13 +6,11 @@ let users = [];
 
 // Function to check if a username is valid (placeholder function)
 const isValid = (username) => {
-    // Placeholder implementation; replace with actual logic as needed
     return users.some(user => user.username === username);
 }
 
 // Function to authenticate user credentials (placeholder function)
 const authenticatedUser = (username, password) => {
-    // Placeholder implementation; replace with actual logic as needed
     // console.log(user.username);
     return users.some(user => user.username === username && user.password === password);
 }
@@ -34,7 +32,7 @@ regd_users.post("/login", (req, res) => {
         // Create and sign a JWT token
         const token = jwt.sign({ username }, 'fingerprint_customer', { expiresIn: '1h' });
 
-        // Store the token in session (for illustration purposes)
+        // Store the token in session
         req.session.token = token;
         console.log(token);
 
@@ -51,7 +49,7 @@ regd_users.post("/login", (req, res) => {
 // Task 8: Endpoint to add or modify a review for a book
 regd_users.put("/auth/review/:isbn", (req, res) => {
     const { isbn } = req.params;
-    const { review } = req.body; // Assuming review is sent in the request body
+    const { review } = req.body;
     const username = req.user.username;
     
     // Find the book by ISBN
@@ -62,7 +60,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
         });
     }
 
-    // Ensure book.reviews is initialized as an object if it doesn't exist
+    // Ensuring book.reviews is initialized as an object if it doesn't exist
     if (!book.reviews) {
         book.reviews = {};
     }
@@ -81,7 +79,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
 // Task 9: Endpoint to delete a review for a book
 regd_users.delete("/auth/review/:isbn", (req, res) => {
   const { isbn } = req.params;
-  const username = req.user.username; // Assuming userId is set in authentication middleware
+  const username = req.user.username;
 
   // Find the book by ISBN
   const booksArray = Object.values(books);

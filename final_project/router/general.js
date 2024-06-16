@@ -47,16 +47,16 @@ public_users.get('/title/:title', function (req, res) {
 });
 
 // Task 5: Get book reviews by ISBN
-// public_users.get('/review/:isbn', function (req, res) {
-//     const { isbn } = req.params;
-//     const booksArray = Object.values(books);
-//     const book = booksArray.find(b => b.isbn === isbn);
-//     if (book && book.reviews) {
-//         res.json(book.reviews);
-//     } else {
-//         res.status(404).json({ message: 'No reviews found for this book' });
-//     }
-// });
+public_users.get('/review/:isbn', function (req, res) {
+    const { isbn } = req.params;
+    const booksArray = Object.values(books);
+    const book = booksArray.find(b => b.isbn === isbn);
+    if (book && book.reviews) {
+        res.json(book.reviews);
+    } else {
+        res.status(404).json({ message: 'No reviews found for this book' });
+    }
+});
 
 // Task 6: Register a new user
 public_users.post("/register", (req, res) => {
@@ -73,30 +73,9 @@ public_users.post("/register", (req, res) => {
     }
 
     // Register the user (this is a simplified example)
-    // You would typically hash the password and store it securely
     users.push({ username, password });
 
     res.status(201).json({ message: "User registered successfully" });
-});
-
-public_users.get('/review/:isbn', function (req, res) {
-    const { isbn } = req.params;
-    const booksArray = Object.values(books);
-    const book = booksArray.find(b => b.isbn === isbn);
-
-    if (book && book.reviews) {
-        // Use Axios to make an HTTP GET request to a local server endpoint
-        axios.get(`http://localhost:5000/review/${isbn}`)
-            .then(response => {
-                res.json(response.data);
-            })
-            .catch(error => {
-                console.error('Error fetching reviews from server:', error);
-                res.status(500).json({ message: 'Error fetching reviews from server' });
-            });
-    } else {
-        res.status(404).json({ message: 'No reviews found for this book' });
-    }
 });
 
 module.exports.general = public_users;
