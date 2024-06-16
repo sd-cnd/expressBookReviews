@@ -35,31 +35,39 @@ To run this project locally, follow these steps:-
 
 ## Tasks
 
-### Registering a New User
-
-![Registering a New User](https://i.postimg.cc/sfcMtVV0/6-register-png.png)
-
-### Logging in as a User
-
-![Logging in as a User](https://i.postimg.cc/Pr5CHBJf/7-login-png.png)
-
-### Retrieving All Books
+### Task 1 : Retrieving All Books
 
 ![Retrieving All Books](https://i.postimg.cc/gJbwPjX1/1-getallbooks-png.png)
 
-### Searching for a Book by ISBN
+### Task 2 : Searching for a Book by ISBN
 
 ![Searching for a Book by ISBN](https://i.postimg.cc/ZRPWYm6n/2-gedetails-ISBN-png.png)
 
-### Adding and modifying reviews as logged-in user
+### Task 3 : Searching for a Book by author
+
+![Searching for a Book by author](https://i.postimg.cc/gjYnn7KD/3-getbooksbyauthor-png.png)
+
+### Task 4 : Searching for a Book by title
+
+![Searching for a Book by title](https://i.postimg.cc/MGQc4VTy/4-getbooksbytitle-png.png)
+
+### Task 5 : Searching for a Book review by ISBN
+
+![Searching for a Book review by ISBN](https://i.postimg.cc/gjNrRKSP/5-getbookreview-png.png)
+
+### Task 6 : Registering a New User
+
+![Registering a New User](https://i.postimg.cc/sfcMtVV0/6-register-png.png)
+
+### Task 7 : Logging in as a User
+
+![Logging in as a User](https://i.postimg.cc/Pr5CHBJf/7-login-png.png)
+
+### Task 8 : Adding and modifying reviews as logged-in user
 
 ![Adding a New Review](https://i.postimg.cc/dtNLV4Z2/8-reviewadded-png.png)
 
-### Modifying a review as logged-in user
-
-![Modifying a Review](https://i.postimg.cc/dtNLV4Z2/8-reviewadded-png.png)
-
-### Deleting a review as logged-in user
+### Task 9 : Deleting a review as logged-in user
 
 ![Deleting a Review](https://i.postimg.cc/htJhzTVH/9-deletereview-png.png)
 
