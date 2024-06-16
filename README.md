@@ -70,4 +70,4 @@ All APIs have been thoroughly tested using Postman to ensure they function corre
 
 ## Contact
 
-For inquiries and support, you can reach me at [your-email@example.com](mailto:sumitdey.cnd@gmail.com).
+For inquiries and support, you can reach me at [sumitdey.cnd@gmail.com](mailto:sumitdey.cnd@gmail.com).
