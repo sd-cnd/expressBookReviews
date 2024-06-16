@@ -12,7 +12,6 @@ This project is a backend application for managing book reviews, created as part
 - Add a new review for a book (logged-in users only)
 - Modify a book review (logged-in users can modify only their own reviews)
 - Delete a book review (logged-in users can delete only their own reviews)
-- Multiple users can access the application simultaneously to view and manage different book reviews
 
 ## Installation
 To run this project locally, follow these steps:-
