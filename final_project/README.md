@@ -21,7 +21,7 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/sd-cnd/expressBookReviews.git
 
-2. Navigate to the project directory::
+2. Navigate to the project directory:
    ```bash
    cd final-project
 
