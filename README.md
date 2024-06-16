@@ -37,31 +37,31 @@ To run this project locally, follow these steps:-
 
 ### Registering a New User
 
-![Registering a New User](screenshots/register.png)
+![Registering a New User](https://i.postimg.cc/sfcMtVV0/6-register-png.png)
 
 ### Logging in as a User
 
-![Logging in as a User](screenshots/login.png)
+![Logging in as a User](https://i.postimg.cc/Pr5CHBJf/7-login-png.png)
 
 ### Retrieving All Books
 
-![Retrieving All Books](screenshots/books.png)
+![Retrieving All Books](https://i.postimg.cc/gJbwPjX1/1-getallbooks-png.png)
 
 ### Searching for a Book by ISBN
 
-![Searching for a Book by ISBN](screenshots/search.png)
+![Searching for a Book by ISBN](https://i.postimg.cc/ZRPWYm6n/2-gedetails-ISBN-png.png)
 
-### Adding a New Review
+### Adding and modifying reviews as logged-in user
 
-![Adding a New Review](screenshots/add_review.png)
+![Adding a New Review](https://i.postimg.cc/dtNLV4Z2/8-reviewadded-png.png)
 
-### Modifying a Review
+### Modifying a review as logged-in user
 
-![Modifying a Review](screenshots/modify_review.png)
+![Modifying a Review](https://i.postimg.cc/dtNLV4Z2/8-reviewadded-png.png)
 
-### Deleting a Review
+### Deleting a review as logged-in user
 
-![Deleting a Review](screenshots/delete_review.png)
+![Deleting a Review](https://i.postimg.cc/htJhzTVH/9-deletereview-png.png)
 
 ## API Testing
 
