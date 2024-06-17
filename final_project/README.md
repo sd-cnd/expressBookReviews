@@ -4,14 +4,14 @@
 This project is a backend application for managing book reviews, created as part of a hands-on lab and practice project. The application allows users to perform CRUD operations on book reviews with JWT and session authentication. The server-side application is implemented as a RESTful web service using Node.js and Express.js.
 
 ## Features
-- Retrieve a list of all books available in the bookshop
-- Search for specific books based on ISBN, author names, and titles
-- Retrieve reviews/comments for specified books
-- Register as a new user
-- Login to the application
-- Add a new review for a book (logged-in users only)
-- Modify a book review (logged-in users can modify only their own reviews)
-- Delete a book review (logged-in users can delete only their own reviews)
+- Retrieve a list of all books available in the bookshop.
+- Search for specific books based on ISBN, author names, and titles.
+- Retrieve reviews/comments for specified books.
+- Register as a new user.
+- Login to the application.
+- Add a new review for a book (logged-in users only).
+- Modify a book review (logged-in users can modify only their own reviews).
+- Delete a book review (logged-in users can delete only their own reviews).
 
 ## Installation
 To run this project locally, follow these steps:-
@@ -35,33 +35,41 @@ To run this project locally, follow these steps:-
 
 ## Tasks
 
-### Registering a New User
+### Task 1 : Retrieving All Books
 
-![Registering a New User](screenshots/register.png)
+![Retrieving All Books](https://i.postimg.cc/gJbwPjX1/1-getallbooks-png.png)
 
-### Logging in as a User
+### Task 2 : Searching for a Book by ISBN
 
-![Logging in as a User](screenshots/login.png)
+![Searching for a Book by ISBN](https://i.postimg.cc/ZRPWYm6n/2-gedetails-ISBN-png.png)
 
-### Retrieving All Books
+### Task 3 : Searching for a Book by author
 
-![Retrieving All Books](screenshots/books.png)
+![Searching for a Book by author](https://i.postimg.cc/gjYnn7KD/3-getbooksbyauthor-png.png)
 
-### Searching for a Book by ISBN
+### Task 4 : Searching for a Book by title
 
-![Searching for a Book by ISBN](screenshots/search.png)
+![Searching for a Book by title](https://i.postimg.cc/MGQc4VTy/4-getbooksbytitle-png.png)
 
-### Adding a New Review
+### Task 5 : Searching for a Book review by ISBN
 
-![Adding a New Review](screenshots/add_review.png)
+![Searching for a Book review by ISBN](https://i.postimg.cc/gjNrRKSP/5-getbookreview-png.png)
 
-### Modifying a Review
+### Task 6 : Registering a New User
 
-![Modifying a Review](screenshots/modify_review.png)
+![Registering a New User](https://i.postimg.cc/sfcMtVV0/6-register-png.png)
 
-### Deleting a Review
+### Task 7 : Logging in as a User
 
-![Deleting a Review](screenshots/delete_review.png)
+![Logging in as a User](https://i.postimg.cc/Pr5CHBJf/7-login-png.png)
+
+### Task 8 : Adding and modifying reviews as logged-in user
+
+![Adding a New Review](https://i.postimg.cc/dtNLV4Z2/8-reviewadded-png.png)
+
+### Task 9 : Deleting a review as logged-in user
+
+![Deleting a Review](https://i.postimg.cc/htJhzTVH/9-deletereview-png.png)
 
 ## API Testing
 
@@ -70,4 +78,4 @@ All APIs have been thoroughly tested using Postman to ensure they function corre
 
 ## Contact
 
-For inquiries and support, you can reach me at [your-email@example.com](mailto:sumitdey.cnd@gmail.com).
+For inquiries and support, you can reach me at [sumitdey.cnd@gmail.com](mailto:sumitdey.cnd@gmail.com).
