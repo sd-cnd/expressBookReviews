@@ -96,11 +96,11 @@ To run this project locally, follow these steps:-
 
 ### Task 8 : Adding and modifying reviews as logged-in user
 
-![Adding a New Review](https://i.postimg.cc/Dy4ngxRy/8-reviewadded.png)
+![Adding a New Review](https://i.postimg.cc/wMBSCq6L/8-reviewadded.png)
 
 ### Task 9 : Deleting a review as logged-in user
 
-![Code Snippet](https://i.postimg.cc/nVgtCvM8/9-deletereview.png)
+![Code Snippet](https://i.postimg.cc/qqYZW2DH/9-deletereview.png)
 
 ### Task 10 : Added the code for getting the list of books available in the shop (done in Task 1) using Promise callbacks or async-await with Axios.
 
