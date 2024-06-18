@@ -16,12 +16,12 @@ This project is a backend application for managing book reviews, created as part
 ## Files and folders
 The router directory having the below 3 files:
 
--booksdb.js - This contains the the preloaded book information for this application.
--general.js - This contains the skeletal implementations for the routes which a general user can access.
--auth_users.js - This contains the skeletal implementations for the routes which an authorized user can access.
+- booksdb.js - This contains the the preloaded book information for this application.
+- general.js - This contains the skeletal implementations for the routes which a general user can access.
+- auth_users.js - This contains the skeletal implementations for the routes which an authorized user can access.
 
 The root directory has:
--index.js - This is the main file of the application.
+- index.js - This is the main file of the application.
 
 ## Packages
 ```
