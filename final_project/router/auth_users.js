@@ -11,7 +11,6 @@ const isValid = (username) => {
 
 // Function to authenticate user credentials (placeholder function)
 const authenticatedUser = (username, password) => {
-  // console.log(user.username);
   return users.some(user => user.username === username && user.password === password);
 }
 
