@@ -24,7 +24,7 @@ The root directory has:
 -index.js - This is the main file of the application.
 
 ## Packages
-
+```
 {
 "dependencies": {
     "axios": "^1.7.2",
@@ -34,12 +34,15 @@ The root directory has:
     "nodemon": "^2.0.19"
   }
 }
+```
 
+```
 -express: A fast, unopinionated, minimalist web framework for Node.js.
 -express-session: A middleware for session handling in Express applications.
 -jsonwebtoken: A library to work with JSON Web Tokens (JWT) for authentication.
 -nodemon: A utility that automatically restarts your node application when file changes in the directory are detected.
 -axios: A promise-based HTTP client for the browser and Node.js.
+```
 
 ## Installation
 To run this project locally, follow these steps:-
