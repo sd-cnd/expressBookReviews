@@ -51,21 +51,35 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
   const { isbn } = req.params;
   const { review } = req.body;
 
-  let bookReviews = books[isbn].reviews;
+  // Validate username
+  if (!username) {
+    return res.status(400).json({
+      error: "Invalid username"
+    });
+  }
 
-  if (bookReviews.hasOwnProperty(username)) {
+  // Validate isbn
+  if (!isbn || !books.hasOwnProperty(isbn)) {
+    return res.status(400).json({
+      error: "Invalid ISBN"
+    });
+  }
+
+  let bookWithISBNReviews = books[isbn].reviews;
+
+  if (bookWithISBNReviews.hasOwnProperty(username)) {
     // If the user has already reviewed, update the review
-    bookReviews[username] = review;
+    bookWithISBNReviews[username] = review;
     return res.status(200).json({
-      message: "Review modified successfully",
-      bookReviews
+      message: `Review has been modified successfully by the user : ${username}`,
+      bookWithISBNReviews
     });
   } else {
     // If the user hasn't reviewed yet, add a new review
-    bookReviews[username] = review;
+    bookWithISBNReviews[username] = review;
     return res.status(200).json({
-      message: "Review added successfully",
-      bookReviews
+      message: `Review has been added successfully by the user : ${username}`,
+      bookWithISBNReviews
     });
   }
 });
@@ -75,14 +89,28 @@ regd_users.delete("/auth/review/:isbn", (req, res) => {
   const { isbn } = req.params;
   const username = req.user.username;
 
-  let bookReviews = books[isbn].reviews;
+    // Validate username
+    if (!username) {
+      return res.status(400).json({
+        error: "Invalid username"
+      });
+    }
+  
+    // Validate isbn
+    if (!isbn || !books.hasOwnProperty(isbn)) {
+      return res.status(400).json({
+        error: "Invalid ISBN"
+      });
+    }
+
+  let bookWithISBNReviews = books[isbn].reviews;
 
   // Delete the review
-  delete bookReviews[username];
+  delete bookWithISBNReviews[username];
 
   res.status(200).json({
-    message: "Review deleted successfully",
-    bookReviews
+    message: `Review has been deleted successfully by the user : ${username}`,
+    bookWithISBNReviews
   });
 });
 
